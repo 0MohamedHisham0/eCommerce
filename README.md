@@ -1,6 +1,6 @@
 # eCommerce
 # Desription: 
-In this article, we cover the most important features users expect to find in e-Commerce mobile apps.
+In this app, we cover the most important features users expect to find in e-Commerce mobile apps.
 Note that this feature list is extensive, and you don’t need to include every single one to make your mobile shopping app successful.
 
 # Technologies and Languages
