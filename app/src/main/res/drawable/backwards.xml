@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+
+    <path
+        android:name="Rectangle_153"
+        android:fillColor="#fff"
+        android:fillAlpha="0"
+        android:strokeAlpha="0"
+        android:strokeWidth="1"
+        android:pathData="M 0 0 H 44 V 44 H 0 V 0 Z" />
+    <path
+        android:name="Icon_awesome-forward"
+        android:fillColor="#6d7177"
+        android:pathData="M0.471,11.474,8.346,4.808A1.313,1.313,0,0,1,10.5,5.833V19.164a1.312,1.312,0,0,1-2.153,1.025L0.471,13.523a1.351,1.351,0,0,1,0-2.05Zm10.5,0,7.875-6.666A1.313,1.313,0,0,1,21,5.833V19.164a1.312,1.312,0,0,1-2.153,1.025l-7.875-6.666a1.351,1.351,0,0,1,0-2.05Z" />
+</vector>

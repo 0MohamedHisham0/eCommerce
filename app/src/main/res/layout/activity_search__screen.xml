@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Search_Screen">
+
+    <FrameLayout
+        android:id="@+id/Frame_Btn_Back"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_margin="16dp"
+        android:background="@drawable/icon_back">
+
+        <Button
+            android:id="@+id/Btn_back_Search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_oval"
+            android:scaleType="fitXY" />
+
+    </FrameLayout>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/progress_Search"
+        style="@style/SpinKitView.Large.ThreeBounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_Search"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:SpinKit_Color="@color/MainColor" />
+
+    <ImageView
+        android:id="@+id/TextNoSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ET_Search"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/no_search_yet"
+        android:textColor="@color/MainColor"
+        android:gravity="center"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/ET_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@id/Frame_Btn_Back"
+        android:layout_toRightOf="@id/Frame_Btn_Back"
+        android:autofillHints="Search Here"
+        android:backgroundTint="@color/MainColor"
+        android:inputType="text"
+        android:outlineAmbientShadowColor="@color/MainColor"
+        android:outlineSpotShadowColor="@color/MainColor"
+        android:shadowColor="@color/MainColor"
+        android:textColor="@color/black"
+        android:textColorHint="#F6F6F6" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_Search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ET_Search"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_search" />
+
+</RelativeLayout>

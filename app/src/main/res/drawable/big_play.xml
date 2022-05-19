@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+
+    <path
+        android:name="Rectangle_154"
+        android:fillColor="#fff"
+        android:fillAlpha="0"
+        android:strokeAlpha="0"
+        android:strokeWidth="1"
+        android:pathData="M 0 0 H 44 V 44 H 0 V 0 Z" />
+    <path
+        android:name="Icon_awesome-play"
+        android:fillColor="#ffde03"
+        android:pathData="M22.736,11.741,3.879 0.361 A2.557,2.557,0,0,0,0,2.62V25.374a2.569,2.569,0,0,0,3.879,2.259L22.736,16.258a2.65,2.65,0,0,0,0-4.517Z" />
+</vector>

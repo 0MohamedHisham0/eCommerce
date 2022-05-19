@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="70dp"
+    android:height="70dp"
+    android:viewportWidth="18"
+    android:viewportHeight="19">
+
+    <path
+        android:name="Rectangle_5"
+        android:fillColor="@color/MainColor"
+        android:fillAlpha="0"
+        android:pathData="M 0 0 H 44 V 44 H 0 V 0 Z" />
+    <path
+        android:name="icon-arrow-left-2"
+        android:fillColor="@color/MainColor"
+        android:pathData="M9.194,17.2,8.4,17.99a0.854 0.854 ,0,0,1-1.211,0L0.248,11.052a0.854 0.854 ,0,0,1,0-1.211L7.19,2.9A0.854 0.854 ,0,0,1,8.4,2.9l0.793 0.793 a0.858 0.858 ,0,0,1-0.014,1.225l-4.3,4.1H15.139A0.855 0.855 ,0,0,1,16,9.873v1.143a0.855 0.855 ,0,0,1-0.857 0.857 H4.876l4.3,4.1A0.852 0.852 ,0,0,1,9.194,17.2Z" />
+</vector>

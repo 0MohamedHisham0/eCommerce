@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ET_MessageReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/MainColor"
+        android:gravity="center"
+        android:hint="Tap here to Comment"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/Gray_White"
+        android:textCursorDrawable="@color/MainColor" />
+
+    <RatingBar
+        android:id="@+id/RatingBar_DialogRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:progressTint="@color/MainColor"
+        android:rating="2.5"
+        android:stepSize=".5" />
+
+    <Button
+        android:id="@+id/Btn_SubmitRate_DialogRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:text="submit" />
+
+</LinearLayout>

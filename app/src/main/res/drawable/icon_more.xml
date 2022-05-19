@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+
+    <path
+        android:name="Rectangle_115"
+        android:fillColor="#fff"
+        android:fillAlpha="0"
+        android:strokeAlpha="0"
+        android:strokeWidth="1"
+        android:pathData="M 0 0 H 44 V 44 H 0 V 0 Z" />
+    <group
+            android:name="Icon_ionic-ios-more"
+            android:translateX="7.5"
+            android:translateY="4.672">
+        <path
+            android:name="Path_7"
+            android:fillColor="#ffde03"
+            android:pathData="M17.314,15.328a2,2,0,1,0,2,2,2,2,0,0,0-2-2Z" />
+        <path
+            android:name="Path_8"
+            android:fillColor="#ffde03"
+            android:pathData="M6.5,15.328a2,2,0,1,0,2,2,2,2,0,0,0-2-2Z" />
+        <path
+            android:name="Path_9"
+            android:fillColor="#ffde03"
+            android:pathData="M28.156,15.328a2,2,0,1,0,2,2,2,2,0,0,0-2-2Z" />
+    </group>
+</vector>

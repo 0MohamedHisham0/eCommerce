@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+
+    <path
+        android:name="Rectangle_52"
+        android:fillColor="#fff"
+        android:fillAlpha="0"
+        android:strokeAlpha="0"
+        android:strokeWidth="1"
+        android:pathData="M 0 0 H 44 V 44 H 0 V 0 Z" />
+    <path
+        android:name="Icon_awesome-heart"
+        android:fillColor="#ffde03"
+        android:pathData="M19.864,3.547a5.931,5.931,0,0,0-8.018 0.577 L11,4.985l-0.846-0.861a5.931,5.931,0,0,0-8.018-0.577,6.036,6.036,0,0,0-0.425,8.817l8.314,8.474a1.359,1.359,0,0,0,1.946,0l8.314-8.474a6.032,6.032,0,0,0-0.421-8.817Z" />
+</vector>

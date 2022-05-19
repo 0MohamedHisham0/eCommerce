@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav"
+    app:startDestination="@id/Frag_Home">
+
+    <fragment
+        android:id="@+id/Frag_Cart"
+        android:name="com.dal4.ecommerce.fragments.Frag_Cart"
+        android:label="Frag_Cart">
+
+    </fragment>
+    <fragment
+        android:id="@+id/Frag_Home"
+        android:name="com.dal4.ecommerce.fragments.Frag_Home"
+        android:label="Frag_Home">
+
+    </fragment>
+    <fragment
+        android:id="@+id/Frag_Profile"
+        android:name="com.dal4.ecommerce.fragments.Frag_Profile"
+        android:label="Frag_Profile" />
+</navigation>

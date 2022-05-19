@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/MainColor"
+    android:orientation="vertical"
+    tools:context=".ui.First_Screen">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/Rounded_Background"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+
+        android:text="Welcome to our \nEcommerce app."
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Rounded_Background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_background"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/Frame_Btn_SignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/Frame_SignUP_Google"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/btn_primary">
+
+                <Button
+                    android:id="@+id/Btn_SignUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_rectangle"
+                    android:text="Sign Up"
+                    android:textAllCaps="false"
+                    android:textColor="@color/White_Blue" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/Frame_SignUP_Google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/Layout_Already"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_secondary">
+
+                <Button
+                    android:id="@+id/Btn_SignUpWithGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_rectangle"
+                    android:text="Sign Up With Google"
+                    android:textAllCaps="false"
+                    android:textColor="@color/MainColor" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/Layout_Already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/TextView_AlreadyHaveAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/Toggle_SignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/TextView_AlreadyHaveAcc"
+            android:background="@drawable/ripple_rectangle"
+            android:padding="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/SignIn"
+            android:textColor="@color/More_Gray_White"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

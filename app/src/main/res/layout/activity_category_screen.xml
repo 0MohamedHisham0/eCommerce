@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Category_Screen">
+
+
+    <FrameLayout
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_margin="16dp"
+        android:background="@drawable/icon_back">
+
+        <Button
+            android:id="@+id/Btn_back_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_oval"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/Frame_Btn_Cart"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:background="@drawable/icon_cart">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/Btn_Cart_category"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ripple_rectangle_main_color"
+                android:scaleType="fitXY" />
+
+            <com.nex3z.notificationbadge.NotificationBadge
+                android:id="@+id/badge_CategoryScreen"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:nbMaxTextLength="2" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/PageChanger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Frame_Btn_Cart"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Btn_Prev_CS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/back_icon"
+            android:text="Previous"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/TV_PageNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"
+            android:text="0"
+            android:textColor="@color/Gray"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/Btn_Next_CS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end"
+            android:drawableRight="@drawable/next_icon"
+            android:text="Next" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/ResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PageChanger"
+        android:layout_centerHorizontal="true"
+        android:text="Results"
+        android:textColor="@color/Gray" />
+
+    <TextView
+        android:id="@+id/NumberOfItem_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PageChanger"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_toStartOf="@id/ResultText"
+        android:layout_toLeftOf="@id/ResultText"
+        android:text="0"
+        android:textColor="@color/Gray" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RV_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/NumberOfItem_category"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/item_main_product" />
+</RelativeLayout>

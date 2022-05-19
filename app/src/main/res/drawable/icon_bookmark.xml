@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="44"
+    android:viewportHeight="44">
+
+    <path
+        android:name="Rectangle_51"
+        android:fillColor="#fff"
+        android:fillAlpha="0"
+        android:strokeAlpha="0"
+        android:strokeWidth="1"
+        android:pathData="M 0 0 H 44 V 44 H 0 V 0 Z" />
+    <path
+        android:name="Icon_awesome-bookmark"
+        android:fillColor="#ffde03"
+        android:pathData="M0,20V1.875A1.875,1.875,0,0,1,1.875,0h11.25A1.875,1.875,0,0,1,15,1.875V20L7.5,15.625Z" />
+</vector>
